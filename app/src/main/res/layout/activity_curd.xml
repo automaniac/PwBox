@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#226de1b2"
+    android:orientation="vertical"
+    tools:context=".Activitys.CurdActivity">
+
+    <TextView
+        android:id="@+id/cur_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="test"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="账号:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cur_account"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="122222"
+            android:textIsSelectable="true"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="3"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="密码:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cur_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLines="1"
+            android:textIsSelectable="true" />
+
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_copyaccount"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="#64e4ea"-->
+    <!--android:text="复制账号" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_copypassword"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="#56ecc9"-->
+    <!--android:text="复制密码" />-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cur_update"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="#22e9b123"
+            android:text="修改密码" />
+
+        <Button
+            android:id="@+id/cur_delete"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="#ff0900"
+            android:text="删除此账号" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

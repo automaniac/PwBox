@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xriamer.mixdemo">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/a"
+        android:label="密码盒子"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Normal">
+        <activity android:name=".Activitys.InitPdActivity" />
+        <activity
+            android:name=".Activitys.StartActivity"
+            android:theme="@style/Start_theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activitys.WelcomeActivity"
+            android:theme="@style/Start_theme" />
+        <activity android:name=".Activitys.MainActivity" />
+        <activity android:name=".Activitys.LoginActivity" />
+        <activity android:name=".Activitys.AddActivity" />
+        <activity android:name=".Activitys.CurdActivity" />
+        <activity android:name=".Activitys.BaseActivity" />
+        <receiver
+            android:name=".Receiver.BootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
